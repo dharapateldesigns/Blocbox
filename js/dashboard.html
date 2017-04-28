@@ -24,7 +24,7 @@
 
    <!-- LEFT NAV -->
    <nav id="left-nav" class="left-nav">
-     <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
+     <a href="#" class="site-logo"><img src="../images/site-logo.png" /></a>
      <div class="items">
        <p>Items</p>
        <ul>
@@ -51,15 +51,24 @@
    </nav>
 
  
-  <main role="main">
-   <!-- Benefits -->
-   <section class="content">
-     <div class="container">
-       <div class="header">
-         <h1>All Items</h1>
-          <a href="#" class="btn">+ Add</a>
-     </div>
-     </div>
+ <main role="main">
+    <!-- Benefits -->
+    <section class="content">
+      <div class="container">
+        <div class="header">
+          <h1>All Items</h1>
+          <ul class="menu">
+            <li>
+              <a href="#" class="btn">+ Add</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
      <div class="container">
        <div class="content-item">
          <div class="item-box">
@@ -140,14 +149,15 @@
      </div>
    </section>
  </main>
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/dropit.js"></script>
-<script type="text/javascript">
+ <script src="jquery-3.2.1.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="dropit.js"></script>
+ <script type="text/javascript">
      $(".menu").dropit();
-        $( "#menu" ).click(function() {
+     $( "#menu" ).click(function() {
          $("#left-nav").toggleClass("open", 200);
      });
-   </script>
+  </script>
 
  </body>
 
